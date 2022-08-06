@@ -1,0 +1,39 @@
+<%- include('includes/header') %>
+<%- include('includes/navbar') %>  
+<section class="box">
+   <div class="devide-contentes">
+
+    <div class="text-content">
+        <h1>Seja Bem-Vindo</h1>
+      </div> <!--back-img-->
+  
+      <div class="content-form">
+              <div class="form-text">
+                    <p>Olá !</p>
+                    <p><span class="cor">Tudo Bem</span></p>
+              </div> <!--form-text-->
+              <div class="user-good">
+                <p><span class="cor">Faça</span> Seu Cadastro</p>
+              </div> <!--user-good-->
+              <div class="form-group">
+              <form action="/register/receive" method="post" class="col-9 ml-4">
+                <input type="text" class="form-control" placeholder="Digite seu nome" name="name">
+                <input type="email" class="form-control" placeholder="Digite seu email" name="email">
+                <input type="password" class="form-control" placeholder="Digite Sua senha" name="password">
+                <select class="form-control mb-4" name="sex" >
+                    <option selected>Genero</option>
+                    <option >M</option>
+                    <option >F</option>
+                    <option >Outro</option>
+                </select>
+                <input type="submit" value="Cadastrar" class="form-control">
+              </form>
+            </div><!--form-group-->
+      </div> <!--content-form-->
+
+   </div> <!--devide-contentes-->
+</section> <!--box-->
+
+<%- include('includes/footer') %>
+
+
